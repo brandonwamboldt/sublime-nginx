@@ -739,9 +739,15 @@
       <array>
         <dict>
           <key>match</key>
-          <string>\b[0-9][0-9\.]*[bkmgtshd]?\b</string>
-          <key>name</key>
-          <string>constant.numeric.nginx</string>
+          <string>[\t ]([0-9][0-9\.]*[bkmgtshd]?)[\t ;]</string>
+          <key>captures</key>
+          <dict>
+            <key>1</key>
+            <dict>
+              <key>name</key>
+              <string>constant.numeric.nginx</string>
+            </dict>
+          </dict>
         </dict>
         <dict>
           <key>match</key>
@@ -798,4 +804,3 @@
   <string>0C04066A-12D2-43CA-8238-00A12CE4C12D</string>
 </dict>
 </plist>
-
