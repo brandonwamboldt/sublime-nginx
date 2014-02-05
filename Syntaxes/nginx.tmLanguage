@@ -27,13 +27,42 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>\b(events|http|types|location|server) +(.*?)\{</string>
+      <string>\b(events|http|types|server) +(.*?)\{</string>
       <key>captures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
           <string>keyword.context.nginx</string>
+        </dict>
+      </dict>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>\b(location) +[\^]?~[\*]? +(.*?)\{</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.context.location.nginx</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>string.regexp.nginx</string>
+        </dict>
+      </dict>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>\b(location) +(.*?)\{</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.context.location.nginx</string>
         </dict>
       </dict>
     </dict>
