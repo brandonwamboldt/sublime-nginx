@@ -780,13 +780,13 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>\b(on|off)\b</string>
+          <string>[\t ](on|off)(?=[\t ;])</string>
           <key>name</key>
           <string>constant.boolean.nginx</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>\b(kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all)\b</string>
+          <string>[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all)(?=[\t ;])</string>
           <key>name</key>
           <string>constant.lang.nginx</string>
         </dict>
