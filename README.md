@@ -5,4 +5,4 @@ This is a syntax highlighting plugin for Nginx configuration files in Sublime Te
 
 With this plugin, I have fixed many of those bugs and will actively maintain and extend it, as I frequently work with Nginx.
 
-![screenshot](https://github.com/brandonwamboldt/sublime-nginx "Screenshot using SpaceGray theme")
+![screenshot](https://github.com/brandonwamboldt/sublime-nginx/blob/master/screenshot.png?raw=true "Screenshot using SpaceGray theme")
