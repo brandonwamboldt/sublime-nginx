@@ -27,26 +27,41 @@
       <string>comment.line.number-sign</string>
     </dict>
     <dict>
-      <key>match</key>
+      <key>name</key>
+      <string>meta.context.nginx</string>
+      <key>begin</key>
       <string>\b(events|http|types|server) +(.*?)\{</string>
-      <key>captures</key>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.nginx</string>
+          <string>storage.type.context.nginx</string>
         </dict>
       </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
     </dict>
     <dict>
-      <key>match</key>
+      <key>name</key>
+      <string>meta.context.location.nginx</string>
+      <key>begin</key>
       <string>\b(location) +[\^]?~[\*]? +(.*?)\{</string>
-      <key>captures</key>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.location.nginx</string>
+          <string>storage.type.context.location.nginx</string>
         </dict>
         <key>2</key>
         <dict>
@@ -54,40 +69,69 @@
           <string>string.regexp.nginx</string>
         </dict>
       </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
     </dict>
     <dict>
-      <key>match</key>
+      <key>name</key>
+      <string>meta.context.location.nginx</string>
+      <key>begin</key>
       <string>\b(location) +(.*?)\{</string>
-      <key>captures</key>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.location.nginx</string>
+          <string>storage.type.context.location.nginx</string>
         </dict>
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>entity.name.type.location.nginx</string>
+          <string>entity.name.context.location.nginx</string>
         </dict>
       </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
     </dict>
     <dict>
-      <key>match</key>
+      <key>name</key>
+      <string>meta.context.upstream.nginx</string>
+      <key>begin</key>
       <string>\b(upstream) +(.*?)\{</string>
-      <key>captures</key>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.upstream.nginx</string>
+          <string>storage.type.context.nginx</string>
         </dict>
         <key>2</key>
         <dict>
           <key>name</key>
-          <string>entity.name.type.nginx</string>
+          <string>entity.name.context.location.nginx</string>
         </dict>
       </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
     </dict>
     <dict>
       <key>begin</key>
@@ -107,6 +151,21 @@
         <dict>
           <key>include</key>
           <string>#values</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>meta.block.nginx</string>
+      <key>begin</key>
+      <string>\{</string>
+      <key>end</key>
+      <string>\}</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
         </dict>
       </array>
     </dict>
@@ -664,13 +723,36 @@
     </dict>
     <dict>
       <key>begin</key>
-      <string>\b(break|return|rewrite_log|set|uninitialized_variable_warn)\b</string>
+      <string>\b(rewrite_log|set|uninitialized_variable_warn)\b</string>
       <key>captures</key>
       <dict>
         <key>1</key>
         <dict>
           <key>name</key>
           <string>keyword.directive.module.http.rewrite.nginx</string>
+        </dict>
+      </dict>
+      <key>end</key>
+      <string>;</string>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>#values</string>
+        </dict>
+      </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
+    </dict>
+    <dict>
+      <key>begin</key>
+      <string>\b(break|return)\b</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>support.function.module.http.rewrite.nginx</string>
         </dict>
       </dict>
       <key>end</key>
