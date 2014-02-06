@@ -900,7 +900,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>[\t ](=?[0-9][0-9\.]*[bkmgtshd]?)(?=[\t ;])</string>
+          <string>[\t ](=?[0-9][0-9\.]*[bBkKmMgGtTsShHdD]?)(?=[\t ;])</string>
           <key>captures</key>
           <dict>
             <key>1</key>
