@@ -890,7 +890,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all)(?=[\t ;])</string>
+          <string>[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all|default_server|default)(?=[\t ;])</string>
           <key>name</key>
           <string>constant.language.nginx</string>
         </dict>
