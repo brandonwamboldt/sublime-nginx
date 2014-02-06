@@ -879,7 +879,7 @@
           <string>"</string>
           <key>end</key>
           <string>"</string>
-          <key>name</key>
+          <key>contentName</key>
           <string>string.quoted.double.nginx</string>
         </dict>
         <dict>
