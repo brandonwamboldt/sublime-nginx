@@ -86,6 +86,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -107,6 +109,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -128,6 +132,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -149,6 +155,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -170,6 +178,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -191,6 +201,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -212,6 +224,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -233,6 +247,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -254,6 +270,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -275,6 +293,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -296,6 +316,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -317,6 +339,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -338,6 +362,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -359,6 +385,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -380,6 +408,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -401,6 +431,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>match</key>
@@ -422,6 +454,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -443,6 +477,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -464,6 +500,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -485,6 +523,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -506,6 +546,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -527,6 +569,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -548,6 +592,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -569,6 +615,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -590,6 +638,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -611,6 +661,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -632,6 +684,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -653,6 +707,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -674,6 +730,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -695,6 +753,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -716,6 +776,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -737,6 +799,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
     <dict>
       <key>begin</key>
@@ -758,6 +822,8 @@
           <string>#values</string>
         </dict>
       </array>
+      <key>name</key>
+      <string>punctuation.definition.variable</string>
     </dict>
   </array>
   <key>repository</key>
