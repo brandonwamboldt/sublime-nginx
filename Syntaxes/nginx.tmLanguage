@@ -28,9 +28,78 @@
     </dict>
     <dict>
       <key>name</key>
-      <string>meta.context.nginx</string>
+      <string>meta.context.events.nginx</string>
       <key>begin</key>
-      <string>\b(events|http|types|server) +(.*?)\{</string>
+      <string>\b(events) +\{</string>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.context.nginx</string>
+        </dict>
+      </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>meta.context.http.nginx</string>
+      <key>begin</key>
+      <string>\b(http) +\{</string>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.context.nginx</string>
+        </dict>
+      </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>meta.context.types.nginx</string>
+      <key>begin</key>
+      <string>\b(types) +\{</string>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.context.nginx</string>
+        </dict>
+      </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>$self</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>meta.context.server.nginx</string>
+      <key>begin</key>
+      <string>\b(server) +\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
