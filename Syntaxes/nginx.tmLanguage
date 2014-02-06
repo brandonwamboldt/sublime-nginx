@@ -34,7 +34,7 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.context.nginx</string>
+          <string>storage.type.nginx</string>
         </dict>
       </dict>
     </dict>
@@ -46,7 +46,7 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.context.location.nginx</string>
+          <string>storage.type.location.nginx</string>
         </dict>
         <key>2</key>
         <dict>
@@ -63,7 +63,29 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>keyword.context.location.nginx</string>
+          <string>storage.type.location.nginx</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.location.nginx</string>
+        </dict>
+      </dict>
+    </dict>
+    <dict>
+      <key>match</key>
+      <string>\b(upstream) +(.*?)\{</string>
+      <key>captures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.upstream.nginx</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>entity.name.type.nginx</string>
         </dict>
       </dict>
     </dict>
@@ -785,7 +807,7 @@
     </dict>
     <dict>
       <key>begin</key>
-      <string>\b(ip_hash|server|upstream)\b</string>
+      <string>\b(ip_hash|server)\b</string>
       <key>captures</key>
       <dict>
         <key>1</key>
