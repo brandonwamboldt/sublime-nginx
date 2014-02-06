@@ -912,13 +912,13 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>[\t ](on|off)(?=[\t ;])</string>
+          <string>[\t ](on|off|true|false)(?=[\t ;])</string>
           <key>name</key>
           <string>constant.language.nginx</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all|default_server|default)(?=[\t ;])</string>
+          <string>[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all|default_server|default|main|crit|error|debug|warn|notice|last)(?=[\t ;])</string>
           <key>name</key>
           <string>constant.language.nginx</string>
         </dict>
