@@ -68,6 +68,27 @@
     </dict>
     <dict>
       <key>begin</key>
+      <string>\b(if) +\(</string>
+      <key>end</key>
+      <string>\)</string>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>keyword.control.nginx</string>
+        </dict>
+      </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>#values</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>begin</key>
       <string>\b(daemon|env|debug_points|error_log|include|lock_file|master_process|pid|ssl_engine|timer_resolution|user|worker_cpu_affinity|worker_priority|worker_processes|worker_rlimit_core|worker_rlimit_nofile|worker_rlimit_sigpending|working_directory)\b</string>
       <key>captures</key>
       <dict>
@@ -620,7 +641,7 @@
     </dict>
     <dict>
       <key>begin</key>
-      <string>\b(break|if|return|rewrite|rewrite_log|set|uninitialized_variable_warn)\b</string>
+      <string>\b(break|return|rewrite|rewrite_log|set|uninitialized_variable_warn)\b</string>
       <key>captures</key>
       <dict>
         <key>1</key>
