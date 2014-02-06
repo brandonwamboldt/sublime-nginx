@@ -23,7 +23,7 @@
       <key>match</key>
       <string>\#.*</string>
       <key>name</key>
-      <string>comment</string>
+      <string>comment.line.number-sign</string>
     </dict>
     <dict>
       <key>match</key>
