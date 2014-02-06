@@ -828,10 +828,26 @@
   </array>
   <key>repository</key>
   <dict>
+    <key>variables</key>
+    <dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>match</key>
+          <string>(\$[A-Za-z0-9\_]+)\b</string>
+          <key>name</key>
+          <string>variable.other.nginx</string>
+        </dict>
+      </array>
+    </dict>
     <key>values</key>
     <dict>
       <key>patterns</key>
       <array>
+        <dict>
+          <key>include</key>
+          <string>#variables</string>
+        </dict>
         <dict>
           <key>match</key>
           <string>[\t ](=?[0-9][0-9\.]*[bkmgtshd]?)(?=[\t ;])</string>
@@ -848,19 +864,13 @@
           <key>match</key>
           <string>[\t ](on|off)(?=[\t ;])</string>
           <key>name</key>
-          <string>constant.boolean.nginx</string>
+          <string>constant.language.nginx</string>
         </dict>
         <dict>
           <key>match</key>
           <string>[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all)(?=[\t ;])</string>
           <key>name</key>
-          <string>constant.lang.nginx</string>
-        </dict>
-        <dict>
-          <key>match</key>
-          <string>(\$[A-Za-z0-9\_]+)\b</string>
-          <key>name</key>
-          <string>variable.other.nginx</string>
+          <string>constant.language.nginx</string>
         </dict>
         <dict>
           <key>match</key>
@@ -879,8 +889,21 @@
           <string>"</string>
           <key>end</key>
           <string>"</string>
-          <key>contentName</key>
+          <key>name</key>
           <string>string.quoted.double.nginx</string>
+          <key>patterns</key>
+          <array>
+            <dict>
+              <key>match</key>
+              <string>\\"</string>
+              <key>name</key>
+              <string>constant.character.escape.nginx</string>
+            </dict>
+            <dict>
+              <key>include</key>
+              <string>#variables</string>
+            </dict>
+          </array>
         </dict>
         <dict>
           <key>begin</key>
@@ -889,6 +912,19 @@
           <string>'</string>
           <key>name</key>
           <string>string.quoted.single.nginx</string>
+          <key>patterns</key>
+          <array>
+            <dict>
+              <key>match</key>
+              <string>\\'</string>
+              <key>name</key>
+              <string>constant.character.escape.nginx</string>
+            </dict>
+            <dict>
+              <key>include</key>
+              <string>#variables</string>
+            </dict>
+          </array>
         </dict>
       </array>
     </dict>
