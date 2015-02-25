@@ -608,7 +608,7 @@
     </dict>
     <dict>
       <key>match</key>
-      <string>\b(limit_req_log_level|limit_req_zone|limit_req|)\b</string>
+      <string>\b(limit_req_log_level|limit_req_zone|limit_req)\b</string>
       <key>captures</key>
       <dict>
         <key>1</key>
