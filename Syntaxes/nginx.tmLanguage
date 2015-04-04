@@ -838,7 +838,7 @@
     </dict>
     <dict>
       <key>begin</key>
-      <string>\b(rewrite)\b *((.+?)(?&lt;!\\)\s)</string>
+      <string>\b(rewrite)\b *(".+?(?&lt;!\\)"|'.+?(?&lt;!\\)'|((.+?)(?&lt;!\\)\s))</string>
       <key>captures</key>
       <dict>
         <key>1</key>
