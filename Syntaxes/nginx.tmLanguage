@@ -30,7 +30,7 @@
       <key>name</key>
       <string>meta.context.events.nginx</string>
       <key>begin</key>
-      <string>\b(events) +\{</string>
+      <string>\b(events)\s*\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
@@ -53,7 +53,7 @@
       <key>name</key>
       <string>meta.context.http.nginx</string>
       <key>begin</key>
-      <string>\b(http) +\{</string>
+      <string>\b(http)\s*\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
@@ -76,7 +76,7 @@
       <key>name</key>
       <string>meta.context.types.nginx</string>
       <key>begin</key>
-      <string>\b(types) +\{</string>
+      <string>\b(types)\s*\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
@@ -99,7 +99,7 @@
       <key>name</key>
       <string>meta.context.server.nginx</string>
       <key>begin</key>
-      <string>\b(server) +\{</string>
+      <string>\b(server)\s*\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
@@ -122,7 +122,7 @@
       <key>name</key>
       <string>meta.context.location.nginx</string>
       <key>begin</key>
-      <string>\b(location) +[\^]?~[\*]? +(.*?)\{</string>
+      <string>\b((location)\s+(?:~\*?\s+\"?(.*?)\"?|(?:(?:\^?~|\=)\s+)?\"?(.*?)\"?))\s*\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
@@ -130,37 +130,19 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.context.location.nginx</string>
+          <string>entity.name.context.location.nginx</string>
         </dict>
         <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.context.location.nginx</string>
+        </dict>
+        <key>3</key>
         <dict>
           <key>name</key>
           <string>string.regexp.nginx</string>
         </dict>
-      </dict>
-      <key>patterns</key>
-      <array>
-        <dict>
-          <key>include</key>
-          <string>$self</string>
-        </dict>
-      </array>
-    </dict>
-    <dict>
-      <key>name</key>
-      <string>meta.context.location.nginx</string>
-      <key>begin</key>
-      <string>\b(location) +(.*?)\{</string>
-      <key>end</key>
-      <string>\}</string>
-      <key>beginCaptures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>storage.type.context.location.nginx</string>
-        </dict>
-        <key>2</key>
+        <key>4</key>
         <dict>
           <key>name</key>
           <string>entity.name.context.location.nginx</string>
@@ -178,7 +160,7 @@
       <key>name</key>
       <string>meta.context.upstream.nginx</string>
       <key>begin</key>
-      <string>\b(upstream) +(.*?)\{</string>
+      <string>\b((upstream)\s+(.*?))\s*\{</string>
       <key>end</key>
       <string>\}</string>
       <key>beginCaptures</key>
@@ -186,9 +168,14 @@
         <key>1</key>
         <dict>
           <key>name</key>
-          <string>storage.type.context.nginx</string>
+          <string>entity.name.context.upstream.nginx</string>
         </dict>
         <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.context.nginx</string>
+        </dict>
+        <key>3</key>
         <dict>
           <key>name</key>
           <string>entity.name.context.location.nginx</string>
