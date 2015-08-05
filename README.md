@@ -14,8 +14,13 @@ Usage
 -----
 
 This package will recognize `*.conf`, `*.conf.erb`, `nginx.conf`, `mime.types`, and `fastcgi_params` by default. 
+Use `Tools/Command Palette ... (Ctrl+Shift+P)` and type `se sy ngi` to `Set Syntax` to `nginx` manually.
+
+Use `Goto/Goto Symbol ... (Ctrl+R)` to open the panel and input your search (fuzzy) to jump to expected `location`, `server`, `http` etc.
 
 Screenshots
 -----------
 
-![screenshot](https://github.com/brandonwamboldt/sublime-nginx/blob/master/screenshot.png?raw=true "Screenshot using SpaceGray theme")
+![screenshot](screenshot.png?raw=true "Screenshot using SpaceGray theme")
+
+![screenshot](screenshot2-custom-theme.png?raw=true "Screenshot with function list panel, using custom Soda theme")
