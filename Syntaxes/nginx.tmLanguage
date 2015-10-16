@@ -9,6 +9,8 @@
     <string>nginx.conf</string>
     <string>mime.types</string>
     <string>fastcgi_params</string>
+    <string>scgi_params</string>
+    <string>uwsgi_params</string>
   </array>
   <key>foldingStartMarker</key>
   <string>\{\s*$</string>

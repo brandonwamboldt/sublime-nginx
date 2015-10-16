@@ -13,7 +13,7 @@ Simply [download](https://github.com/brandonwamboldt/sublime-nginx/archive/maste
 Usage
 -----
 
-This package will recognize `*.conf`, `*.conf.erb`, `nginx.conf`, `mime.types`, and `fastcgi_params` by default. 
+This package will recognize `*.conf`, `*.conf.erb`, `nginx.conf`, `mime.types`, `fastcgi_params`, `scgi_params`, and `uwsgi_params` by default.
 
 Screenshots
 -----------

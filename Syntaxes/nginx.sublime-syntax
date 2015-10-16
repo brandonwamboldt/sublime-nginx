@@ -8,6 +8,8 @@ file_extensions:
   - nginx.conf
   - mime.types
   - fastcgi_params
+  - scgi_params
+  - uwsgi_params
 scope: source.nginx
 contexts:
   main:
