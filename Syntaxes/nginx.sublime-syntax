@@ -393,7 +393,7 @@ contexts:
       scope: constant.language.nginx
     - match: '[\t ](kqueue|rtsig|epoll|\/dev\/poll|select|poll|eventport|max|all|default_server|default|main|crit|error|debug|warn|notice|last)(?=[\t ;])'
       scope: constant.language.nginx
-    - match: \\.*\ |\~|\~\*|\!\~|\!\~\*
+    - match: \\.*\ |\~\*|\~|\!\~\*|\!\~
       scope: string.regexp.nginx
     - match: \^.*?\$
       scope: string.regexp.nginx
