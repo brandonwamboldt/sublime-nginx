@@ -701,8 +701,47 @@
       <string>punctuation.definition.variable</string>
     </dict>
     <dict>
+      <key>name</key>
+      <string>meta.context.map.nginx</string>
       <key>begin</key>
-      <string>\b(map|map_hash_max_size|map_hash_bucket_size)\b</string>
+      <string>\b(map) +(\$[A-Za-z0-9\_]+) +(\$[A-Za-z0-9\_]+) *\{</string>
+      <key>end</key>
+      <string>\}</string>
+      <key>beginCaptures</key>
+      <dict>
+        <key>1</key>
+        <dict>
+          <key>name</key>
+          <string>storage.type.context.nginx</string>
+        </dict>
+        <key>2</key>
+        <dict>
+          <key>name</key>
+          <string>variable.other.nginx</string>
+        </dict>
+        <key>3</key>
+        <dict>
+          <key>name</key>
+          <string>variable.other.nginx</string>
+        </dict>
+      </dict>
+      <key>patterns</key>
+      <array>
+        <dict>
+          <key>include</key>
+          <string>#values</string>
+        </dict>
+        <dict>
+          <key>match</key>
+          <string>;</string>
+          <key>name</key>
+          <string>punctuation.definition.map.nginx</string>
+        </dict>
+      </array>
+    </dict>
+    <dict>
+      <key>begin</key>
+      <string>\b(map_hash_max_size|map_hash_bucket_size)\b</string>
       <key>captures</key>
       <dict>
         <key>1</key>
