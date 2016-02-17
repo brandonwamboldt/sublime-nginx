@@ -1162,7 +1162,7 @@
         </dict>
         <dict>
           <key>match</key>
-          <string>\\.*\ |\~|\~\*|\!\~|\!\~\*</string>
+          <string>\\.*\ |\~\*|\~|\!\~\*|\!\~</string>
           <key>name</key>
           <string>string.regexp.nginx</string>
         </dict>
