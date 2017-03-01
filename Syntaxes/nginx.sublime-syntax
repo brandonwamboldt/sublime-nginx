@@ -368,6 +368,11 @@ contexts:
         - match: ;
           pop: true
         - include: values
+    - match: '\b.*_by_lua_block\s+\{'
+      push: Packages/Lua/Lua.sublime-syntax
+      with_prototype:
+        - match: '^\s*\}'
+          pop: true
     - match: '\b([a-zA-Z0-9\_]+)\s+'
       captures:
         1: keyword.directive.module.unsupported.nginx
