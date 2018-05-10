@@ -6,6 +6,7 @@
   <array>
     <string>conf.erb</string>
     <string>conf</string>
+    <string>ngx</string>
     <string>nginx.conf</string>
     <string>mime.types</string>
     <string>fastcgi_params</string>
