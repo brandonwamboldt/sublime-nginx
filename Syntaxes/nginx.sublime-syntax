@@ -255,6 +255,8 @@ contexts:
         - include: values
         - match: ;
           scope: punctuation.definition.map.nginx
+        - match: \#.*
+          scope: comment.line.number-sign
     - match: \b(map_hash_max_size|map_hash_bucket_size)\b
       captures:
         1: keyword.directive.module.http.map.nginx
