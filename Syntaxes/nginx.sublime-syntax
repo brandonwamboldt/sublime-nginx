@@ -374,7 +374,7 @@ contexts:
       push: Packages/Lua/Lua.sublime-syntax
       with_prototype:
         - match: '^\s*\}'
-          pop: true
+          pop: 3
     - match: '\b([a-zA-Z0-9\_]+)\s+'
       captures:
         1: keyword.directive.module.unsupported.nginx
