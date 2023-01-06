@@ -370,7 +370,7 @@ contexts:
         - match: ;
           pop: true
         - include: values
-    - match: '\b.*_by_lua_block\s+\{'
+    - match: '\b.*_by_lua_block\s+.*\{'
       push: Packages/Lua/Lua.sublime-syntax
       with_prototype:
         - match: '^\s*\}'
